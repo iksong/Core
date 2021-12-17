@@ -1,0 +1,150 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Core
+@_exported import Core
+import Foundation
+import Swift
+import _Concurrency
+@_hasMissingDesignatedInitializers public class Core {
+  public static func doSomething()
+  public static func showSecret() -> Swift.String
+  @objc deinit
+}
+extension Foundation.Locale {
+  public static let enUS: Foundation.Locale
+}
+public enum DateFormat : Swift.String {
+  case none
+  case hh
+  case HH
+  case mm
+  case dd
+  case YYYY
+  case mmdd
+  case MMM
+  case MMMM
+  case mmdd_1
+  case MMddyyyy
+  case MMddyyyy_1
+  case MMddyyyy_2
+  case ddMMyyyy
+  case ddMMyyyy_1
+  case ddMMyyyy_2
+  case mmddyyyy
+  case mmddyyyy_1
+  case yyyyMMdd
+  case yyyyMMdd_1
+  case yyyyMMdd_2
+  case yyMMdd
+  case MMMddyyyy
+  case MMMddyyyy_1
+  case MMMMddyyyy
+  case MMMMddyyyy_1
+  case MMMMddyyyy_2
+  case YYDDD
+  case MMMdd
+  case MMMdd_1
+  case MMMdyyyy_1
+  case MMMdyyyy_2
+  case MMMMy_1
+  case MMMMd_1
+  case YYYYMMdd
+  case MMddYY
+  case MMMMyyyy
+  case MMMMyyyy_1
+  case yyyyMMMM
+  case yyyyMMMM_1
+  case yyyyMM
+  case yyMM
+  case EEEE
+  case MMMMdy
+  case MMMMdy_1
+  case yyyyLLL
+  case yyyyLLL_1
+  case EEEEMMMMddyyyy_1
+  case MMMdyyyyhhmmssa
+  case yyyyMMddTHHmmss_1
+  case yyyyMMddhhmmss_1
+  case yyyyMMddThhmmssZ_1
+  case yyyyMMddTHHmmssZ_1
+  case yyyyMMddTHHmmssZ_2
+  case yyyyMMddTHHmmsszzz
+  case yyyyMMddTHHmmssZZZ_1
+  case MMddyyyyhhmmaazzz_1
+  case hhmma
+  case HHmm
+  case EEEEMMMdyyyy
+  case yyyyMMddTHHmmssSSSZ
+  case EEEEMMMdyyyyhhmma
+  case EEEEMMMd
+  case EEEEMMMMd
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Core.DateFormat {
+  public func convertedString(sourceString: Swift.String, toFormat to: Core.DateFormat, in formatter: Foundation.DateFormatter) -> Swift.String?
+}
+public enum DateTimeInterval {
+  case seconds(Swift.Int)
+  case minutes(Swift.Int)
+  case hours(Swift.Int)
+  case days(Swift.Int)
+  case weeks(Swift.Int)
+  case months(Swift.Int)
+  case years(Swift.Int)
+}
+extension Core.DateTimeInterval {
+  public var component: Foundation.Calendar.Component {
+    get
+  }
+  public var value: Swift.Int {
+    get
+  }
+}
+extension Foundation.DateFormatter {
+  convenience public init(iso8601Format dateFormat: Swift.String)
+  convenience public init(dateFormat: Swift.String, timeZone: Foundation.TimeZone? = nil, calendar: Foundation.Calendar? = nil, locale: Foundation.Locale? = nil)
+  convenience public init(dateStyle: Foundation.DateFormatter.Style, timeStyle: Foundation.DateFormatter.Style? = nil, timeZone: Foundation.TimeZone? = nil, calendar: Foundation.Calendar? = nil, locale: Foundation.Locale? = nil)
+}
+public struct CoreLibrary {
+  public var text: Swift.String {
+    get
+  }
+  public init()
+}
+extension Foundation.Date {
+  public var second: Swift.Int {
+    get
+  }
+  public var minute: Swift.Int {
+    get
+  }
+  public var hour: Swift.Int {
+    get
+  }
+  public var day: Swift.Int {
+    get
+  }
+  public var month: Swift.Int {
+    get
+  }
+  public var year: Swift.Int {
+    get
+  }
+  public var weekDay: Swift.String {
+    get
+  }
+  public var dayString: Swift.String {
+    get
+  }
+  public var monthString: Swift.String {
+    get
+  }
+  public func add(time: Core.DateTimeInterval) -> Foundation.Date
+}
+extension Core.DateFormat : Swift.Equatable {}
+extension Core.DateFormat : Swift.Hashable {}
+extension Core.DateFormat : Swift.RawRepresentable {}
