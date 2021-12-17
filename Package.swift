@@ -24,5 +24,8 @@ let package = Package(
         .testTarget(
             name: "CoreTests",
             dependencies: ["Core"]),
+        .binaryTarget(
+                    name: "Core",
+                    path: "Core.xcframework"),
     ]
 )
